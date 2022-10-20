@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index generale</title>
-</head>
-<body>
-    <ol>
-        <li><a href="/admin">admin</a></li>
-        <li><a href="{% url 'prima_app:index'%}">prima_app</a></li>
-        <li><a href="{% url 'seconda_app:index'%}">seconda_app</a></li>
-    </ol>
-</body>
-</html>
+{% extends "index.html"%}
+{% block title%}{{block.super}} | Index Generale {%endblock title%}
+{%block content%}
+    <h1>Index Generale</h1>
+        <ol>
+            <li><a href="/admin">admin</a></li>
+            <li><a href="{% url 'prima_app:index'%}">prima_app</a></li>
+            <li><a href="{% url 'seconda_app:index'%}">seconda_app</a></li>
+        </ol>
+{%endblock title%}
