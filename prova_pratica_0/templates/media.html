@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %} {{ block.super}} | index2 {% endblock title %}
+{% block content %}
     
-</body>
-</html>
+<h1>media</h1>
+{% for i in lista %}
+    {{i}}
+{% endfor %}
+{% if media < 6 %}
+ <p style="color:red">{{media}}</p>
+ <br>
+{% elif media > 6 %}
+<p style="color:green">{{media}}</p>
+ <br>
+{% else %}
+<p>{{media}}</p>
+ <br>
+{% endif%}
+
+{% endblock content %}
