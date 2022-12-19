@@ -25,5 +25,5 @@ def es_for(request):
     }
     return render(request, "es_for.html", context)
 
-def index(request):
-    return render(request, "index.html")
+def index2(request):
+    return render(request, "index2.html")
