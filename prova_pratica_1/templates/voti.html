@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} {{ block.super}} | index2 {% endblock title %}
+{% block content %}
+    
+<h1>Elenco voti</h1>
+<ul>
+{% for studenti, valutazioni in voti.items%}
+<li>{{studenti}}</li>
+<ul>{% for voto in valutazioni %}
+    <li>{{voto}}</li>
+
+    {% endfor %}
+</ul>
+{% endfor %}
+</ul>
+{% endblock content %}
