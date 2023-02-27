@@ -1,0 +1,10 @@
+{% extends "base.html"%}
+{% block title%}{{block.super}} | Homepage {%endblock title%}
+{%block content%}
+    <h1>Benvenuto nell'app news</h1> 
+    
+    <ol>     
+        <li><a href="{% url 'news:lista_articoli'%}">Articoli</a></li>
+        <li><a href="{% url 'news:lista_giornalisti'%}">Giornalisti</a></li>
+    </ol>
+{%endblock content%}

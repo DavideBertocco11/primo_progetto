@@ -44,9 +44,23 @@
                   seconda_app
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="{% url 'seconda_app:es_if'%}">homepage</a>
+                  <a class="dropdown-item" href="{% url 'seconda_app:es_if'%}">es_if</a>
                   <a class="dropdown-item" href="{% url 'seconda_app:if_else_elif'%}">if else elif</a>
                   <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">es for</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  news
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'news:lista_giornalisti'%}">Lista giornalisti</a>
+                  <a class="dropdown-item" href="{% url 'news:lista_articoli'%}">Lista articoli</a>
+                  <a class="dropdown-item" href="{% url 'news:lista_giornalisti_api'%}">Lista giornalisti api</a>
+                  <a class="dropdown-item" href="{% url 'news:giornalista_api' 3%}">Giornalista api</a>
+                  <a class="dropdown-item" href="{% url 'news:lista_articoli_api'%}">Lista articoli api</a>
+                  <a class="dropdown-item" href="{% url 'news:articolo_api' 2%}">Articolo api</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
